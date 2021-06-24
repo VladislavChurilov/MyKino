@@ -17,6 +17,10 @@ const Login = lazy(
 const HeadPage = lazy(
   () => import('./components/HeadPage' /* webpackChunkName: "HeadPage" */),
 );
+const MovieDetail = lazy(
+  () =>
+    import('./components/MovieDetail' /* webpackChunkName: "movieDetail" */),
+);
 
 const NotFound = lazy(
   () => import('./components/NotFound' /* webpackChunkName: "NotFound" */),
@@ -36,6 +40,9 @@ export default function App() {
         <Switch>
           <Route exact path={routes.headPage}>
             <HeadPage />
+          </Route>
+          <Route exact path={routes.movieDetail}>
+            <MovieDetail />
           </Route>
           <Route exact path={routes.register}>
             <Register />

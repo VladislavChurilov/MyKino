@@ -10,7 +10,7 @@ export const fetchNewMovies = createAsyncThunk(
   async (_, { rejectWithValue }) => {
     try {
       const { data } = await axios.get(`trending/all/day?api_key=${KEY}`);
-      console.log('gg', data);
+      // console.log('gg', data);
       return data.results;
     } catch (error) {}
   },

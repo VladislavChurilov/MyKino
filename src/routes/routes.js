@@ -7,7 +7,7 @@ const routes = {
   register: '/register',
   login: '/login',
   movies: '/movies',
-  movieDetail: '/movies/movieId',
+  movieDetail: '/movies/:movieId',
   cast: '/movies/:movieId/cast',
   reviews: '/movies/:movieId/reviews',
 };

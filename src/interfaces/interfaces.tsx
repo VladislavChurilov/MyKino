@@ -1,5 +1,5 @@
 export interface IContact {
-  // name: string;
+  name: string;
   // number: string;
   id: string;
   poster_path: string | undefined;
