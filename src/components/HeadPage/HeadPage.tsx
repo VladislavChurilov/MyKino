@@ -1,12 +1,12 @@
-import { useEffect, useCallback, memo } from 'react';
+import { memo } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useSelector, useDispatch } from 'react-redux';
+// import {  useDispatch } from 'react-redux';
 // import { fetchNewMovies } from '../../redux/operations';
 import NewMovies from '../../views/NewMovies';
 
 function HeadPage() {
   const classes = useStyles();
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   //   useEffect(() => {
   //     dispatch(fetchNewMovies());
   //     console.log('hinm');

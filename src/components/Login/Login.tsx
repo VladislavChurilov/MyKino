@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { logIn } from '../../redux/auth/authOperations';
+// import { useDispatch } from 'react-redux';
+// import { logIn } from '../../redux/auth/authOperations';
 // import style from './Login.module.css';
 import { Button } from '@material-ui/core';
 import Input from '@material-ui/core/Input';
@@ -15,7 +15,7 @@ const styles = {
 };
 
 export default function Login() {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 

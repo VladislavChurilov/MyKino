@@ -2,7 +2,7 @@
 import { createUseStyles } from 'react-jss';
 import { NavLink } from 'react-router-dom';
 import header from '../../images/header2.jpg';
-import sprite from '../../images/sprite.svg';
+// import sprite from '../../images/sprite.svg';
 import AppBar from './AppBar';
 
 export default function Header() {

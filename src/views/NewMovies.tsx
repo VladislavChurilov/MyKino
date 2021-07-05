@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { createUseStyles } from 'react-jss';
 import { useSelector, useDispatch } from 'react-redux';
@@ -10,18 +10,23 @@ import 'swiper/swiper-bundle.css';
 import SwiperCore, { Pagination, Navigation } from 'swiper/core';
 SwiperCore.use([Pagination, Navigation]);
 ////
+
 export default function NewMovies() {
   const classes = useStyles();
   const dispatch = useDispatch();
+  // const movieDetail = useSelector(getMovieDetail);
 
   const newMovies = useSelector(getNewMovies);
+  // console.log(newMovies.title);
   useEffect(() => {
     dispatch(fetchNewMovies());
   }, [dispatch]);
 
   //////
-
-  ////////
+  // const onMovieDetails = (id: string) => {
+  //   dispatch(fetchMovieDetail(id));
+  // };
+  /////
   return (
     <section className={classes.newestMovies}>
       <h2 className={classes.newestMoviesHeading}>Newest</h2>
